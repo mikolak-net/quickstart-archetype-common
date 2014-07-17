@@ -15,7 +15,7 @@ At this point, coupled with the premise that POMs are essentially executable (de
 it can be argued that the aforementioned archetypes fail the 
 https://en.wikipedia.org/wiki/Single_responsibility_principle[SRP].
 
-The archetype you're now viewing, and https://github.com/mikkoz/java8-quickstart-archetype[its sister project],
+The archetype you're now viewing, and its sister project,
  attempt to alleviate this problem.
 
 Namely, they have a single goal in mind: enable a user to create multiple projects, 
