@@ -56,7 +56,8 @@
 							</execution>
 						</executions>
 						<configuration>
-							<executable>git submodule update --init --recursive</executable>
+							<executable>git</executable>
+							<commandlineArgs>submodule update --init --recursive</commandlineArgs>
 						</configuration>
 					</plugin>				
 					<plugin>
