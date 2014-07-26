@@ -40,26 +40,6 @@
 			</activation>
 			<build>
 				<plugins>
-					<!-- This is a workaround to get submodules working with the maven release plugin -->
-					<!-- http://stackoverflow.com/questions/6938142/how-to-get-maven-release-to-clone-git-submodules -->
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<version>1.3.1</version>
-						<executions>
-							<execution>
-								<phase>initialize</phase>
-								<id>invoke build</id>
-								<goals>
-									<goal>exec</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<executable>git</executable>
-							<commandlineArgs>submodule update --init --recursive</commandlineArgs>
-						</configuration>
-					</plugin>				
 					<plugin>
 						<!-- we need this to create a dummy Javadoc as required by the Sonatype 
 							OSS repo. -->
@@ -105,6 +85,26 @@
 			</activation>
 			<build>
 				<plugins>
+					<!-- This is a workaround to get submodules working with the maven release plugin -->
+					<!-- http://stackoverflow.com/questions/6938142/how-to-get-maven-release-to-clone-git-submodules -->
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<version>1.3.1</version>
+						<executions>
+							<execution>
+								<phase>initialize</phase>
+								<id>invoke build</id>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<executable>git</executable>
+							<commandlineArgs>submodule update --init --recursive</commandlineArgs>
+						</configuration>
+					</plugin>					
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
