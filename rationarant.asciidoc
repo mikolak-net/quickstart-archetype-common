@@ -26,5 +26,4 @@ The last subpoint emphasizes why this goal was chosen as a primary one, over edu
 Nowadays, various 3rd party ecosystem libs (such as the aforementioned http://junit.org/[three] 
 http://www.scalatest.org/[testing] https://etorreborre.github.io/specs2/[libraries] ) 
 tend to do a decent job at introducing new developers. Therefore, it is posited that it's more efficient for 
-any given archetype user to have a _tabula rasa_ available at any time than to being educated - 
-a job that's somewhat redundant,  given the context.
+an archetype to just focus on providing a _tabula rasa_.
